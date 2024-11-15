@@ -22,20 +22,6 @@ ifstream inputFile(filename);  // Открываем файл для чтени�
     inputFile.close();  // Закрываем файл после чтения
 }
 
-
-// Функция Nº 2: вывод строк на экран
-void printLines(const vector<string>& lines)
-{
-
-}
-
-// Функция Nº 3: запись строк в файл
-void writeToFile(const string& filename, const vector<string>& lines)
-{
-
-}
-
-
 int main()
 {
     setlocale(LC_ALL, "Russian");
@@ -47,8 +33,6 @@ int main()
     cout << "чтение строк из файла " << inputFilename <<" в вектор" << endl;
     readFromFile(inputFilename, lines);
     cout << "вывод строк на экран:   " << endl;
-    printLines(lines);
     cout << "запись строк в файл " << outputFilename << endl;
-    writeToFile(outputFilename, lines);
     return 0;
 }
