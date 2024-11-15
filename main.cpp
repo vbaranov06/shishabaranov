@@ -11,10 +11,17 @@ void readFromFile(const string& filename, vector<string>& lines)
 {
 ifstream inputFile(filename);  // Открываем файл для чтения
     if (!inputFile) {
-        cout << "Ошибка открытия файла для " << endl;
+        cout << "Ошибка открытия файла для чтения!!!" << endl;
         return;
     }
+    string line;
+    while (getline(inputFile, line)) {  // Читаем строки до конца файла
+        cout << line << endl;  // Выводим строку на экран
+    }
+
+    inputFile.close();  // Закрываем файл после чтения
 }
+
 
 // Функция Nº 2: вывод строк на экран
 void printLines(const vector<string>& lines)
