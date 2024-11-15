@@ -9,7 +9,11 @@ using namespace std;
 // Функция Nº 1: чтение строк из файла в вектор
 void readFromFile(const string& filename, vector<string>& lines)
 {
-
+ifstream inputFile(filename);  // Открываем файл для чтения
+    if (!inputFile) {
+        cout << "Ошибка открытия файла для " << endl;
+        return;
+    }
 }
 
 // Функция Nº 2: вывод строк на экран
