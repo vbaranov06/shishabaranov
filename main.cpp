@@ -1,5 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
 #include <vector>
 #include <string>
 #include <fstream>
@@ -26,9 +25,7 @@ void readFromFile(const string& filename, vector<string>& lines)
 // Функция №2: вывод строк на экран
 void printLines(const vector<string>& lines)
 {
- for (const auto& line : lines) {
-        cout << line << endl;  // Выводим каждую строку на экран
-    }
+
 }
 
 // Функция №3: запись строк в файл
@@ -53,13 +50,5 @@ int main()
     cout << "Запись строк в файл " << outputFilename << endl;
     writeToFile(outputFilename, lines);
 
-=======
-
-using namespace std;
-
-int main()
-{
-    cout << "Hello world!" << endl;
->>>>>>> 9eb7309a6d52b917299c25b2b711bf26860bcf5a
     return 0;
 }
