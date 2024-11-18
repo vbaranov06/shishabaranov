@@ -1,4 +1,5 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <vector>
 #include <string>
 #include <fstream>
@@ -52,5 +53,13 @@ int main()
     cout << "Запись строк в файл " << outputFilename << endl;
     writeToFile(outputFilename, lines);
 
+=======
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+>>>>>>> 9eb7309a6d52b917299c25b2b711bf26860bcf5a
     return 0;
 }
