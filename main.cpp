@@ -25,7 +25,9 @@ void readFromFile(const string& filename, vector<string>& lines)
 // Функция №2: вывод строк на экран
 void printLines(const vector<string>& lines)
 {
-
+ for (const auto& line : lines) {
+        cout << line << endl;  // Выводим каждую строку на экран
+    }
 }
 
 // Функция №3: запись строк в файл
