@@ -33,7 +33,17 @@ void printLines(const vector<string>& lines)
 // Функция №3: запись строк в файл
 void writeToFile(const string& filename, const vector<string>& lines)
 {
+ofstream outputFile(filename);  // Открываем файл для записи
+    if (!outputFile) {
+        cerr << "Ошибка открытия файла для записи!" << endl;
+        return;
+    }
 
+    for (const auto& line : lines) {
+        outputFile << line << endl;  // Записываем каждую строку в файл
+    }
+
+    outputFile.close();  // Закрываем файл после записи
 }
 int main()
 {
