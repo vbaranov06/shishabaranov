@@ -25,14 +25,16 @@ void readFromFile(const string& filename, vector<string>& lines)
 // Функция №2: вывод строк на экран
 void printLines(const vector<string>& lines)
 {
-
+ for (const auto& line : lines) {
+        cout << line << endl;  // Выводим каждую строку на экран
+    }
 }
 
 // Функция №3: запись строк в файл
 void writeToFile(const string& filename, const vector<string>& lines)
 {
 
-
+}
 int main()
 {
     setlocale(LC_ALL, "Russian");  // Устанавливаем русскую локаль для вывода
